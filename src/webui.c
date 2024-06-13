@@ -605,7 +605,7 @@ static const char* webui_html_served = "<html lang=\"en\"><head><meta charset=\"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:60px}h2{font-size:20px}"
 "h3{font-size:15px}</style></head><body><div><h1>Access Denied</h1><h2>You can't access this content"
 "<br>because it's already in use in<br>another window.</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
-static const char* webui_html_res_not_available = "<html lang=\"en\"><head><meta charset="UTF-8"><title>404 Not Found</title>"
+static const char* webui_html_res_not_available = "<html lang=\"en\"><head><meta charset=\"UTF-8\"><title>404 Not Found</title>"
 "<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
 "h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>404</h1><h2>Not Found</h2><h3>maiChartConver WebUi v1.0"
