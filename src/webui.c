@@ -600,7 +600,7 @@ static WEBUI_THREAD_WEBVIEW;
 
 // -- Heap ----------------------------
 static _webui_core_t _webui_core;
-static const char* webui_html_served = "<html lang="en"><head><meta charset="UTF-8"><title>Access Denied</title>"
+static const char* webui_html_served = "<html lang=\"en\"><head><meta charset="UTF-8"><title>Access Denied</title>"
 "<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:60px}h2{font-size:20px}"
 "h3{font-size:15px}</style></head><body><div><h1>Access Denied</h1><h2>You can't access this content"
@@ -610,13 +610,13 @@ static const char* webui_html_res_not_available = "<html lang="en"><head><meta c
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
 "h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>404</h1><h2>Not Found</h2><h3>maiChartConver WebUi v1.0"
 "</h3></div></body></html>";
-static const char* webui_deno_not_found = "<html lang="en"><head><meta charset="UTF-8"><title>Deno Not Found</title>"
+static const char* webui_deno_not_found = "<html lang=\"en\"><head><meta charset="UTF-8"><title>Deno Not Found</title>"
 "<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
 "h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>Deno Not Found</h1><h2>Deno is not found on this system."
 <br>Please download it from <a href=\"https://github.com/denoland/deno/releases\">https://github.com/denoland/deno/releases</a>"
 "</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
-static const char* webui_nodejs_not_found = "<html lang="en"><head><meta charset="UTF-8"><title>Node.js Not Found</title>"
+static const char* webui_nodejs_not_found = "<html lang=\"en\"><head><meta charset="UTF-8"><title>Node.js Not Found</title>"
 "<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
 "h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>Node.js Not Found</h1><h2>Node.js is not found on this system."
