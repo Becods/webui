@@ -600,41 +600,36 @@ static WEBUI_THREAD_WEBVIEW;
 
 // -- Heap ----------------------------
 static _webui_core_t _webui_core;
-static const char* webui_html_served = "<html><head><title>Access Denied</title><script src=\"/webui.js\"></script><style>"
-"body{margin:0;background-repeat:no-repeat;background-attachment:fixed;background-color:#FF3CAC;background-image:linear-"
-"gradient(225deg,#FF3CAC 0%,#784BA0 45%,#2B86C5 100%);font-family:sans-serif;margin:20px;color:#fff}a{color:#fff}</style>"
-"</head><body><h2>&#9888; Access Denied</h2><p>You can't access this content<br>because it's already in use in<br>another "
-"window.</p><br><a href=\"https://www.webui.me\"><small>WebUI v" WEBUI_VERSION "<small></a></body></html>";
-static const char* webui_html_res_not_available = "<html><head><title>Resource Not Available</title><script src=\"/webui.js\">"
-"</script><style>body{margin:0;background-repeat:no-repeat;background-attachment:fixed;background-color:#FF3CAC;background-"
-"image:linear-gradient(225deg,#FF3CAC 0%,#784BA0 45%,#2B86C5 100%);font-family:sans-serif;margin:20px;color:#fff}a{color:#fff}"
-"</style></head><body><h2>&#9888; Resource Not Available</h2><p>The requested resource is not available.</p><br><a href=\""
-"https://www.webui.me\"><small>WebUI v" WEBUI_VERSION "<small></a></body></html>";
-static const char* webui_deno_not_found = "<html><head><title>Deno Not Found</title><script src=\"/webui.js\"></script>"
-"<style>body{margin:0;background-repeat:no-repeat;background-attachment:fixed;background-color:#FF3CAC;background-image:"
-"linear-gradient(225deg,#FF3CAC 0%,#784BA0 45%,#2B86C5 100%);font-family:sans-serif;margin:20px;color:#fff}a{color:#fff}"
-"</style></head><body><h2>&#9888; Deno Not Found</h2><p>Deno is not found on this system.<br>Please download it from <a "
-"href=\"https://github.com/denoland/deno/releases\">https://github.com/denoland/deno/releases</a></p><br><a href=\""
-"https://www.webui.me\"><small>WebUI v" WEBUI_VERSION "<small></a></body></html>";
-static const char* webui_nodejs_not_found = "<html><head><title>Node.js Not Found</title><script src=\"/webui.js\"></script>"
-"<style>body{margin:0;background-repeat:no-repeat;background-attachment:fixed;background-color:#FF3CAC;background-image:"
-"linear-gradient(225deg,#FF3CAC 0%,#784BA0 45%,#2B86C5 100%);font-family:sans-serif;margin:20px;color:#fff}a{color:#fff}</style>"
-"</head><body><h2>&#9888; Node.js Not Found</h2><p>Node.js is not found on this system.<br>Please download it from <a href=\""
-"https://nodejs.org/en/download/\">https://nodejs.org/en/download/</a></p><br><a href=\"https://www.webui.me\"><small>WebUI v"
-WEBUI_VERSION "<small></a></body></html>";
-static const char* webui_def_icon = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 64 64\""
-" version=\"1.1\"><path d=\"M 35.315 15.983 C 30.885 17.816, 29.305 25.835, 33.500 25.195 C 34.600 25.027, 37.177 24.802, 39.227"
-" 24.695 C 44.084 24.441, 49.054 19.899, 47.386 17.239 C 46.146 15.262, 38.884 14.507, 35.315 15.983 M 54.602 17.835 C 54.058"
-" 18.716, 60.204 22.022, 62.284 21.968 C 63.958 21.925, 58.228 17, 56.503 17 C 55.741 17, 54.886 17.376, 54.602 17.835\""
-" stroke=\"none\" fill=\"#789dcc\" fill-rule=\"evenodd\"/><path d=\"M 3.635 19.073 C 2.098 20.282, 1 22.144, 1 23.542 C 1 26.692,"
-" 12.655 53.139, 14.754 54.750 C 15.650 55.437, 17.882 56, 19.716 56 C 23.227 56, 22.667 56.645, 30.331 43.762 L 32.163 40.684"
-" 36.109 47.830 C 40.333 55.479, 42.889 57.131, 47.815 55.394 C 49.855 54.675, 51.575 51.765, 56.620 40.500 C 60.068 32.800,"
-" 62.904 25.600, 62.921 24.500 C 62.944 23.042, 61.572 21.893, 57.862 20.262 C 55.062 19.031, 52.336 18.292, 51.806 18.620 C "
-"51.275 18.948, 49.385 22.428, 47.604 26.353 L 44.367 33.490 42.504 30.647 C 41.121 28.536, 40.907 27.379, 41.673 26.152 C 42.567"
-" 24.721, 42.224 24.526, 39.103 24.695 C 37.121 24.802, 34.600 25.027, 33.500 25.195 C 31.780 25.457, 31.517 24.966, 31.620 "
-"21.688 L31.739 17.876 28.799 20.688 C 27.182 22.235, 24.694 25.637, 23.270 28.250 C 21.847 30.863, 20.354 33, 19.954 33 C 19.553"
-" 33, 17.969 30.044, 16.433 26.431 C 12.452 17.064, 8.833 14.984, 3.635 19.073\" stroke=\"none\" fill=\"#294fb7\" fill-rule=\""
-"evenodd\"/></svg>"; static const char* webui_def_icon_type = "image/svg+xml";
+static const char* webui_html_served = "<html lang="en"><head><meta charset="UTF-8"><title>Access Denied</title>"
+"<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
+"text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:60px}h2{font-size:20px}"
+"h3{font-size:15px}</style></head><body><div><h1>Access Denied</h1><h2>You can't access this content"
+<br>because it's already in use in<br>another window.</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
+static const char* webui_html_res_not_available = "<html lang="en"><head><meta charset="UTF-8"><title>404 Not Found</title>"
+"<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
+"text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
+"h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>404</h1><h2>Not Found</h2><h3>maiChartConver WebUi v1.0"
+"</h3></div></body></html>";
+static const char* webui_deno_not_found = "<html lang="en"><head><meta charset="UTF-8"><title>Deno Not Found</title>"
+"<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
+"text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
+"h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>Deno Not Found</h1><h2>Deno is not found on this system."
+<br>Please download it from <a href=\"https://github.com/denoland/deno/releases\">https://github.com/denoland/deno/releases</a>"
+"</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
+static const char* webui_nodejs_not_found = "<html lang="en"><head><meta charset="UTF-8"><title>Node.js Not Found</title>"
+"<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
+"text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
+"h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>Node.js Not Found</h1><h2>Node.js is not found on this system."
+<br>Please download it from <a href=\"https://nodejs.org/en/download/\">https://nodejs.org/en/download/</a>"
+"</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
+static const char* webui_def_icon = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"512\" height=\"512\" viewBox=\"0 0 24 24\""
+"fill=\"none\"><path d=\"M2.91992 8.58003C2.91992 7.46003 3.5199 6.41999 4.4899 5.84999L10.4299 2.42C11.3999 1.86 12.5999 1.86 13.5799"
+"2.42L19.5199 5.84999C20.4899 6.40999 21.0899 7.45003 21.0899 8.58003V15.42C21.0899 16.54 20.4899 17.58 19.5199 18.15L13.5799 "
+"21.58C12.6099 22.14 11.4099 22.14 10.4299 21.58L4.4899 18.15C3.5199 17.59 2.91992 16.55 2.91992 15.42V12.66\" stroke=\"#292D32\" "
+"stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M7.11914 5L15.3091 13.2L15.3191 8.65\" "
+"stroke=\"#292D32\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M16.8797 19L8.68969 10.8L8.67969 "
+"15.35\" stroke=\"#292D32\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>";
+static const char* webui_def_icon_type = "image/svg+xml";
 
 // -- Functions -----------------------
 void webui_run(size_t window, const char* script) {
