@@ -622,8 +622,8 @@ static const char* webui_nodejs_not_found = "<html lang=\"en\"><head><meta chars
 "h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>Node.js Not Found</h1><h2>Node.js is not found on this system."
 "<br>Please download it from <a href=\"https://nodejs.org/en/download/\">https://nodejs.org/en/download/</a>"
 "</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
-static const char* webui_def_icon = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"512\" height=\"512\" viewBox=\"0 0 24 24\""
-"fill=\"none\"><path d=\"M2.91992 8.58003C2.91992 7.46003 3.5199 6.41999 4.4899 5.84999L10.4299 2.42C11.3999 1.86 12.5999 1.86 13.5799"
+static const char* webui_def_icon = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"512\" height=\"512\" viewBox=\"0 0 24 24\" "
+"fill=\"none\"><path d=\"M2.91992 8.58003C2.91992 7.46003 3.5199 6.41999 4.4899 5.84999L10.4299 2.42C11.3999 1.86 12.5999 1.86 13.5799 "
 "2.42L19.5199 5.84999C20.4899 6.40999 21.0899 7.45003 21.0899 8.58003V15.42C21.0899 16.54 20.4899 17.58 19.5199 18.15L13.5799 "
 "21.58C12.6099 22.14 11.4099 22.14 10.4299 21.58L4.4899 18.15C3.5199 17.59 2.91992 16.55 2.91992 15.42V12.66\" stroke=\"#292D32\" "
 "stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M7.11914 5L15.3091 13.2L15.3191 8.65\" "
