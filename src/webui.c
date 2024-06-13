@@ -604,7 +604,7 @@ static const char* webui_html_served = "<html lang=\"en\"><head><meta charset=\"
 "<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:60px}h2{font-size:20px}"
 "h3{font-size:15px}</style></head><body><div><h1>Access Denied</h1><h2>You can't access this content"
-<br>because it's already in use in<br>another window.</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
+"<br>because it's already in use in<br>another window.</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
 static const char* webui_html_res_not_available = "<html lang="en"><head><meta charset="UTF-8"><title>404 Not Found</title>"
 "<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
@@ -614,13 +614,13 @@ static const char* webui_deno_not_found = "<html lang=\"en\"><head><meta charset
 "<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
 "h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>Deno Not Found</h1><h2>Deno is not found on this system."
-<br>Please download it from <a href=\"https://github.com/denoland/deno/releases\">https://github.com/denoland/deno/releases</a>"
+"<br>Please download it from <a href=\"https://github.com/denoland/deno/releases\">https://github.com/denoland/deno/releases</a>"
 "</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
 static const char* webui_nodejs_not_found = "<html lang=\"en\"><head><meta charset=\"UTF-8\"><title>Node.js Not Found</title>"
 "<script src=\"/webui.js\"></script><style>html{height:100%}body{color:#888;margin:0;display:table;width:100%;height:100vh;"
 "text-align:center;user-select:none}div{display:table-cell;vertical-align:middle}h1{font-size:80px}h2{font-size:30px}"
 "h3{font-size:15px;margin-top:50px}</style></head><body><div><h1>Node.js Not Found</h1><h2>Node.js is not found on this system."
-<br>Please download it from <a href=\"https://nodejs.org/en/download/\">https://nodejs.org/en/download/</a>"
+"<br>Please download it from <a href=\"https://nodejs.org/en/download/\">https://nodejs.org/en/download/</a>"
 "</h2><h3>maiChartConver WebUi v1.0</h3></div></body></html>";
 static const char* webui_def_icon = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"512\" height=\"512\" viewBox=\"0 0 24 24\""
 "fill=\"none\"><path d=\"M2.91992 8.58003C2.91992 7.46003 3.5199 6.41999 4.4899 5.84999L10.4299 2.42C11.3999 1.86 12.5999 1.86 13.5799"
